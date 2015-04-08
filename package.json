@@ -1,0 +1,16 @@
+{
+    "version": "0.0.0",
+    "name": "cordova-plugin-template",
+    "cordova_name": "CordovaPluginTemplate",
+    "description": "Cordova Plugin Template",
+    "license": "Apache 2.0",
+    "author": {
+        "name": "Raphael Hirtenfelder",
+        "email": "hirtenfelder@bluewin.ch"
+    },
+    "keywords": [
+        "cordova",
+        "plugin",
+        "template"
+    ]
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-template" version="0.0.0">
+  <name>Template</name>
+  <description>Cordova Plugin Template</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova, plugin, template</keywords>
+
+  <js-module src="www/template.js" name="template">
+    <clobbers target="navigator.template" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Template" >
+        <param name="android-package" value="cordova.plugin.Template"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Template.java" target-dir="src/cordova/plugin" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Template">
+        <param name="ios-package" value="CPTemplate" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CPTemplate.h" />
+    <source-file src="src/ios/CPTemplate.m" />
+  </platform>
+
+</plugin>
