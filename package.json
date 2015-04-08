@@ -8,6 +8,13 @@
         "name": "Raphael Hirtenfelder",
         "email": "hirtenfelder@bluewin.ch"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hirtenfelder/cordova-plugin-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hirtenfelder/cordova-plugin-template/issues"
+    },
     "keywords": [
         "cordova",
         "plugin",
