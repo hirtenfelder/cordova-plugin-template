@@ -7,11 +7,9 @@
     NSString* callbackId = [command callbackId];
     NSString* msg = [NSString stringWithFormat: @"Echo: %@", [[command arguments] objectAtIndex:0]];
 
-    CDVPluginResult* result = [CDVPluginResult
-                               resultWithStatus:CDVCommandStatus_OK
-                               messageAsString:msg];
+    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
 
-    [self success:result callbackId:callbackId];
+	[self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
 @end
