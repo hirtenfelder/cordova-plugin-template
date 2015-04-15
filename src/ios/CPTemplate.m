@@ -1,4 +1,4 @@
-﻿#import "CPTemplate.h"
+#import "CPTemplate.h"
 
 @implementation CPTemplate
 
